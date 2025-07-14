@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Malla Física Médica - UNSAM</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Malla Curricular - Física Médica</h1>
+
+  <h2>1er Cuatrimestre</h2>
+  <div class="grid">
+    <div class="materia" data-nombre="Análisis Matemático I" data-codigo="CB01" data-estado="pendiente" onclick="mostrarInfo(this)">Análisis Matemático I</div>
+    <div class="materia" data-nombre="CTS" data-codigo="CB02" data-estado="pendiente" onclick="mostrarInfo(this)">Ciencia, Tecnología y Sociedad</div>
+    <div class="materia" data-nombre="Química General" data-codigo="CB03" data-estado="pendiente" onclick="mostrarInfo(this)">Química General</div>
+    <div class="materia" data-nombre="Biología I" data-codigo="CB04" data-estado="pendiente" onclick="mostrarInfo(this)">Biología I</div>
+  </div>
+
+  <h2>2do Cuatrimestre</h2>
+  <div class="grid">
+    <div class="materia" data-nombre="Cálculo I" data-codigo="CB05" data-correlativas="CB01" data-estado="pendiente" onclick="mostrarInfo(this)">Cálculo I</div>
+    <div class="materia" data-nombre="Álgebra y Geometría I" data-codigo="CB06" data-estado="pendiente" onclick="mostrarInfo(this)">Álgebra y Geometría I</div>
+    <div class="materia" data-nombre="Biología II" data-codigo="CB07" data-correlativas="CB03, CB04" data-estado="pendiente" onclick="mostrarInfo(this)">Biología II</div>
+    <div class="materia" data-nombre="Física I" data-codigo="CB10" data-correlativas="CB01" data-estado="pendiente" onclick="mostrarInfo(this)">Física I</div>
+  </div>
+
+  <h2>3er Cuatrimestre</h2>
+  <div class="grid">
+    <div class="materia" data-nombre="Cálculo II" data-codigo="CB09" data-correlativas="CB05, CB06" data-estado="pendiente" onclick="mostrarInfo(this)">Cálculo II</div>
+    <div class="materia" data-nombre="Física II" data-codigo="CB13" data-correlativas="CB05, CB10" data-estado="pendiente" onclick="mostrarInfo(this)">Física II</div>
+    <div class="materia" data-nombre="Álgebra y Geometría II" data-codigo="CB28" data-correlativas="CB06" data-estado="pendiente" onclick="mostrarInfo(this)">Álgebra y Geometría II</div>
+    <div class="materia" data-nombre="Informática" data-codigo="CB29" data-correlativas="CB05, CB06" data-estado="pendiente" onclick="mostrarInfo(this)">Informática</div>
+  </div>
+
+  <div id="infoBox"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
