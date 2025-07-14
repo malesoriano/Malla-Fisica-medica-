@@ -1,0 +1,44 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  background: #f9f9f9;
+}
+h1, h2 {
+  text-align: center;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+  max-width: 1000px;
+  margin: 10px auto 30px auto;
+}
+.materia {
+  padding: 15px;
+  background-color: #ddd;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.materia:hover {
+  background-color: #ccc;
+}
+.materia[data-estado="aprobada"] {
+  background-color: #a8e6cf;
+}
+.materia[data-estado="cursando"] {
+  background-color: #ffd3b6;
+}
+.materia[data-estado="pendiente"] {
+  background-color: #ffaaa5;
+}
+#infoBox {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 15px;
+  max-width: 600px;
+  margin: auto;
+  display: none;
+  border-radius: 6px;
+}
